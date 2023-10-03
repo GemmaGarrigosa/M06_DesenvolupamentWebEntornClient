@@ -1,0 +1,51 @@
+Apunts M06
+
+CONSOLE :
+
+console.log(); --> escriure
+console.error(); --> mostra error en vermell
+console.warn(); --> mostra un error menys important en groc
+console.clear(); --> neteja la consola
+console.time("identificador"); --> per veure si tarda molt en respondre el codi (mostra el que tarda en temps real)
+console.timeLog() --> et mostra quant temps ha passat des de el console.time
+console.timeEnd() --> fi del time, el destrueix. 
+console.table() -->
+
+
+EVENTS: 
+
+onclick
+onmouseover
+ondragstart
+onchange 
+
+
+VARIABLES: 
+
+Sempre camelcase. 
+Recomanable fer servir let. 
+No fer servir paraules reservades. 
+String 'hola' "hola" `hola` 
+
+
+TIPUS DATE: 
+
+new Date(); --> data en la que estem
+new Date(valor); 00:00:00 UTC
+new Date(dataString);
+
+!!! Els dies del mes comencen en 0 i van de 0 a 11
+var data; 
+
+OBLIGATORI MES I ANY, LA RESTA ES OPCIONAL
+------------------------------------------
+
+data=new Date ("10/25/2012"); 
+data= new Date("25 Nov 1971"); 
+data= new Date("Nov 25 1971"); 
+data= new Date("25 Nov 1971 00:30"); 
+data= new Date("25 Nov 1971 00:30:24"); 
+data= new Date(2012, 0); 
+data= new Date(2005, 4, 5, 17, 55, 55);
+
+si poses 30 de febrer et suma un mes i et posa al 2 de febrer automàticament. 
