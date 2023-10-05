@@ -49,3 +49,4 @@ data= new Date(2012, 0);
 data= new Date(2005, 4, 5, 17, 55, 55);
 
 si poses 30 de febrer et suma un mes i et posa al 2 de febrer automàticament. 
+
