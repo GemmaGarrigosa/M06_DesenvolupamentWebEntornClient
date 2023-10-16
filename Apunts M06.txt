@@ -50,3 +50,17 @@ data= new Date(2005, 4, 5, 17, 55, 55);
 
 si poses 30 de febrer et suma un mes i et posa al 2 de febrer automàticament. 
 
+DOM Document Object Model: 
+
+Per cada cosa hi ha a una pagina html hi ha un item de js (objecte).
+
+Com creem una taula: 
+
+let t = document.createElement("table");
+let tr = document.createElement("tr");
+let th = document.createELement("td");
+let text = document.createTextNode(" adfadsfadsf "); --> 
+
+td.appendChild(txt); del més genèric al més específic. 
+
+Per afegir la taula al document --> document.body.appendChild(t)
