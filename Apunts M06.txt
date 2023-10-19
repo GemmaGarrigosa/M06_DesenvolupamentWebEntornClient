@@ -64,3 +64,86 @@ let text = document.createTextNode(" adfadsfadsf "); -->
 td.appendChild(txt); del més genèric al més específic. 
 
 Per afegir la taula al document --> document.body.appendChild(t)
+
+BOM Browser Object Model
+-------------------------
+
+Tota la possibilitat d'interactuar amb el navegador a través de js
+
+Objectes d'alt nivell: 
+
+window------navigator
+        |__ screen
+        |__ history
+        |__ location 
+        
+Objecte WINDOW : 
+
+representa una finestra del navegador 
+
+
+defaultStatus --> missatge que es visualitza en la barra d'estat
+self --> fa referencia a la finestra actual
+closed --> retorna bool indicant si la finestra s'ha tancat o no
+opener --> retorna una referencia 
+localStorage
+innerWidth, innerHeight
+sessionStorage
+
+
+var win = window.open("","Estadístiques","scrollbars=yes,resizable=yes,width=780,height=200,");
+
+win.document.body.innerHTML = `<h1> Estadístiques</h1>`;
+
+Objecte NAVIGATOR: 
+
+saber l'idioma, saber si esta offline (per si està en local).
+
+Objecte SCREEN:
+
+Proporciona info de la pantalla 
+
+availHeight
+height
+availWidth 
+
+
+Objecte HISTORY:
+
+es guarda en una pila de URL's totes les pàgines que has anat visitant
+back()
+forward()
+length
+go()
+
+Objecte LOCATION: 
+emmagatzema la info de la URL on està carregada actuakment la pàgina
+hash
+host
+hostname
+href
+origin
+pathname
+port
+protocol
+search --> torna una querystring
+assign()
+reload()
+
+
+Objecte COOKIES:
+un fitxer de text en el que es pot escriure text en format clau valor, per guardar info que ens interessa
+document.cookie="idioma"="castella";colorFons=green;
+
+Local Storage --> info dins de una base de dades en local , es guarden en un arxiu SQLite a una subcarpeta de l'usuari , maxim 5MB
+
+SessionStorage --> ens guardarà la info fins que tanquem la pàgina 
+
+setItem()
+getItem()
+removeItem()
+clear()
+key()
+
+window.localstorage.clear()
+
