@@ -77,3 +77,24 @@ function quantesAB() {
 
     console.log(`La frase conté ${comptaA} -> a's i conté ${comptaB}-> b's `);
 }
+
+
+// Aquesta funció és per probar aquesta funció unica de JS que et permet recorrer la frase caracter a caracter
+
+function quantesABArray() {
+    let frase = prompt("escriu una frase").toLowerCase();
+    let comptaA = 0;
+    let comptaB = 0;
+
+    for (let i = 0; i <= frase.length-1; i++) {
+        if (frase[i] == "a"){
+            comptaA++;
+        } else if (frase[i]== "b"){
+            comptaB++;
+        } else {
+            continue;
+        }
+    }
+
+    console.log(`La frase conté ${comptaA} -> a's i conté ${comptaB}-> b's `);
+}
