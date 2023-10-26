@@ -97,7 +97,6 @@ function pentaVocalica() {
 
 function pentaVocalicaSOLID() {
     let text = prompt("Introdueix una paraula");
-    let comptador = 0;
     let vocals = [/[aàáä]/gi,/[eèéë]/gi,/[iíìï]/gi,/[oòóö]/gi,/[uúùü]/gi];
 
     for (let i= 0; i < vocals.length; i++){
